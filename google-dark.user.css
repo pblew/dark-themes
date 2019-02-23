@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name         Google Dark
+@description  Dark theme for Google
+@namespace    pblew.dark-themes
+@version      1.0.0
+@author       Paul Blew <paul.blew@gmail.com> (https://github.com/pblew/dark-themes)
+@homepageURL  https://github.com/pblew/dark-themes
+@supportURL   https://github.com/pblew/dark-themes/issues
+@license      CC-BY-4.0
+@preprocessor default
+==/UserStyle== */
+
+@-moz-document regexp("^https?://[a-z]+\\.google\\.co(?:m|\\.[a-z]+)/.*$") {
+    html {
+        background-color: black;
+        filter: invert(100%) hue-rotate(180deg);
+    }
+    html[stylus-iframe] {
+        filter: none;
+    }
+    div.gbip, img, span.gbii {
+        filter: hue-rotate(180deg) invert(100%);
+    }
+
+}
