@@ -10,7 +10,7 @@
 @preprocessor default
 ==/UserStyle== */
 
-@-moz-document regexp("^https?://[a-z]+\\.google\\.co(?:m|\\.[a-z]+)/.*$") {
+@-moz-document regexp("^https?://www\\.google\\.co(?:m|\\.[a-z]+)/.*$") {
     html {
         background-color: black;
         filter: invert(100%) hue-rotate(180deg);
