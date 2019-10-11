@@ -2,7 +2,7 @@
 @name         AWS Dark
 @description  Dark theme for the AWS console
 @namespace    pblew.dark-themes
-@version      1.0.0
+@version      1.0.1
 @author       Paul Blew <paul.blew@gmail.com> (https://github.com/pblew/dark-themes)
 @homepageURL  https://github.com/pblew/dark-themes
 @supportURL   https://github.com/pblew/dark-themes/issues
@@ -11,14 +11,11 @@
 ==/UserStyle== */
 
 @-moz-document domain("aws.amazon.com"), domain("amazonaws.com") {
-    html {
+    html:not([stylus-iframe]) {
         background-color: black;
         filter: invert(100%) hue-rotate(180deg);
     }
-    html[stylus-iframe] {
-        filter: none;
-    }
-    a.btn, code, pre[class*=code] {
+    a.btn, pre[class*=code] {
         filter: hue-rotate(180deg) invert(100%);
     }
     pre > code {
