@@ -2,7 +2,7 @@
 @name         LinkedIn Dark
 @description  Dark theme for LinkedIn
 @namespace    pblew.dark-themes
-@version      1.0.0
+@version      1.0.1
 @author       Paul Blew <paul.blew@gmail.com> (https://github.com/pblew/dark-themes)
 @homepageURL  https://github.com/pblew/dark-themes
 @supportURL   https://github.com/pblew/dark-themes/issues
@@ -22,7 +22,10 @@
     img,
     svg,
     .feed-identity-module__member-bg-image,
-    .feed-shared-linkedin-video {
+    .feed-shared-linkedin-video,
+    .video-js,
+    .video-s-loader,
+    .video-s-loader__overlay-text {
         filter: hue-rotate(180deg) invert(100%);
     }
     .feed-shared-linkedin-video img,
