@@ -1,0 +1,32 @@
+/* ==UserStyle==
+@name         StackOverflow QandA Highlighting
+@description  Highlighting of questions and answers for StackOverflow
+@namespace    pblew.other-themes
+@version      1.0.0
+@author       Paul Blew <paul.blew@gmail.com> (https://github.com/pblew/dark-themes)
+@homepageURL  https://github.com/pblew/dark-themes
+@supportURL   https://github.com/pblew/dark-themes/issues
+@license      CC-BY-4.0
+@preprocessor default
+==/UserStyle== */
+@-moz-document domain("stackoverflow.com") {
+    .question-page #answers .answer,
+    .question-page .question#question {
+        background-color: var(--black-050);
+        border-color: var(--black-200);
+        border-radius: 3px;
+        border-style: solid;
+        border-width: 1px;
+        box-shadow: var(--bs-sm);
+        margin: 1em 0;
+        padding: 1em;
+    }
+    .question-page .question#question {
+        background-color: var(--blue-050);
+        border-color: var(--blue-200);
+    }
+    .question-page #answers .accepted-answer {
+        background-color: var(--green-050);
+        border-color: var(--green-200);
+    }
+}
