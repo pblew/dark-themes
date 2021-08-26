@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name         Jenkins Dark
+@description  Dark theme for Jenkins 2
+@namespace    pblew.dark-themes
+@version      1.0.0
+@author       Paul Blew <paul.blew@gmail.com> (https://github.com/pblew/dark-themes)
+@homepageURL  https://github.com/pblew/dark-themes
+@supportURL   https://github.com/pblew/dark-themes/issues
+@license      CC-BY-4.0
+@preprocessor default
+==/UserStyle== */
+
+@-moz-document regexp("^https?://.*jenkins\..*") {
+    html:not([stylus-iframe]) > body {
+        background-color: black;
+        filter: invert(90%) hue-rotate(180deg);
+    }
+    header {
+        filter: hue-rotate(180deg) invert(90%);
+    }
+
+}
