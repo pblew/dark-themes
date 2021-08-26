@@ -2,7 +2,7 @@
 @name         Atlassian Cloud Dark
 @description  Dark theme for the Atlassian's cloud offerings
 @namespace    pblew.dark-themes
-@version      1.0.1
+@version      1.0.2
 @author       Paul Blew <paul.blew@gmail.com> (https://github.com/pblew/dark-themes)
 @homepageURL  https://github.com/pblew/dark-themes
 @supportURL   https://github.com/pblew/dark-themes/issues
@@ -10,7 +10,7 @@
 @preprocessor default
 ==/UserStyle== */
 
-@-moz-document domain("atlassian.net") {
+@-moz-document domain("atlassian.net"), regexp("^https?://.*bitbucket\\..*"), regexp("^https?://.*jira\\..*"), regexp("^https?://.*confluence\\..*") {
     html:not([stylus-iframe]) {
         background-color: black;
         filter: invert(100%) hue-rotate(180deg);
