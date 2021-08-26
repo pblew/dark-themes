@@ -2,7 +2,7 @@
 @name         LinkedIn Dark
 @description  Dark theme for LinkedIn
 @namespace    pblew.dark-themes
-@version      1.0.2
+@version      1.0.3
 @author       Paul Blew <paul.blew@gmail.com> (https://github.com/pblew/dark-themes)
 @homepageURL  https://github.com/pblew/dark-themes
 @supportURL   https://github.com/pblew/dark-themes/issues
@@ -11,9 +11,9 @@
 ==/UserStyle== */
 
 @-moz-document domain("linkedin.com") {
-    html:not([stylus-iframe]) {
+    html:not([stylus-iframe]) > body {
         background-color: black;
-        filter: invert(100%) hue-rotate(180deg);
+        filter: invert(90%) hue-rotate(180deg);
     }
     header#extended-nav,
     .msg-overlay-discoverability-color header.msg-overlay-bubble-header {
@@ -27,7 +27,7 @@
     .video-js,
     .video-s-loader,
     .video-s-loader__overlay-text {
-        filter: hue-rotate(180deg) invert(100%);
+        filter: hue-rotate(180deg) invert(90%);
     }
     .feed-shared-linkedin-video img,
     .feed-shared-linkedin-video svg {
