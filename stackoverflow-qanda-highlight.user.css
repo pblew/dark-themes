@@ -2,7 +2,7 @@
 @name         StackOverflow QandA Highlighting
 @description  Highlighting of questions and answers for StackOverflow
 @namespace    pblew.other-themes
-@version      1.0.1
+@version      1.0.2
 @author       Paul Blew <paul.blew@gmail.com> (https://github.com/pblew/dark-themes)
 @homepageURL  https://github.com/pblew/dark-themes
 @supportURL   https://github.com/pblew/dark-themes/issues
@@ -12,7 +12,7 @@
 @-moz-document domain("stackoverflow.com"), domain("stackexchange.com"), domain("serverfault.com") {
     .question-page #answers .answer,
     .question-page .question#question {
-        background-color: var(--black-050);
+        background-color: var(--black-100);
         border-color: var(--black-200);
         border-radius: 3px;
         border-style: solid;
@@ -22,11 +22,11 @@
         padding: 1em;
     }
     .question-page .question#question {
-        background-color: var(--blue-050);
+        background-color: var(--blue-100);
         border-color: var(--blue-200);
     }
     .question-page #answers .accepted-answer {
-        background-color: var(--green-050);
+        background-color: var(--green-100);
         border-color: var(--green-200);
     }
 }
